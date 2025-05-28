@@ -4,11 +4,13 @@ on: push
 
 jobs:
     first_job:
-        run-on: ubunut-latest
+        runs-on: ubuntu-latest
         steps: 
-        -name: welcome page
-         run: "my first github actions porject"
-        -name: List files
-         run: ls
-        -name: read file
-         cat: README.md       
+        - name: welcome page
+          run: "my first github actions porject"
+
+        - name: List files
+          run: ls
+
+        - name: readme file
+          run: cat README.md
