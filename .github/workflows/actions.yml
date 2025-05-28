@@ -1,0 +1,14 @@
+name: my first workflow
+
+on: push
+
+jobs:
+    first_job:
+        run-on: ubunut-latest
+        steps: 
+        -name: welcome page
+         run: "my first github actions porject"
+        -name: List files
+         run: ls
+        -name: read file
+         cat: README.md       
