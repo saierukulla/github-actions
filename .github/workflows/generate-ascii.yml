@@ -9,6 +9,9 @@ jobs:
         - name: checkout repo
           uses: actions/checkout@v4
 
+        - name: list the files
+          run: ls -lrta  
+
         - name: install the coway using shell script
           run: |
             chmod +x ascii-script.sh  
