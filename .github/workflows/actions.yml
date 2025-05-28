@@ -12,7 +12,7 @@ jobs:
         - name: read and list files
           run: | 
             echo "my first github actions porject"
-            lsrta
+            ls -lrta
             cat README.md
 
 
