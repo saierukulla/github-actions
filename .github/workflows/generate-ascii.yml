@@ -14,6 +14,9 @@ jobs:
 
         - name: execute cowsay program
           run: cowsay -f cow "Run for cover, I am a COW....RAWR" >>cow.txt
+
+        - name: test file exits
+          run: grep i "cow" cow.txt  
           
         - name: read file
           run: cat cow.txt   
