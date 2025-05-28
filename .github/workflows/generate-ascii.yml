@@ -11,7 +11,7 @@ jobs:
 
         - name: install the coway using shell script
           run: |
-            chmod +x
+            chmod +x ascii-script.sh  
             ./ascii-script.sh  
 
         # - name: install cowsay program
