@@ -13,7 +13,7 @@ jobs:
           run: sudo apt-get install cowsay -y
 
         - name: execute cowsay program
-          run: coway -f cow "Run for cover, I am a COW....RAWR" >>cow.tx
+          run: cowsay -f cow "Run for cover, I am a COW....RAWR" >>cow.tx
           
         - name: read file
           run: cat cow.txt   
